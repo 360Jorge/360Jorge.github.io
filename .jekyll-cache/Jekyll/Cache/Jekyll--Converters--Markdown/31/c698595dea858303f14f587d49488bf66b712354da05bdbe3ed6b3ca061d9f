@@ -1,0 +1,46 @@
+I"`<h2 id="a-very-short-story-on-how-i-got-where-i-am">A Very Short Story on How I Got Where I Am</h2>
+
+<p>Ever since I finished high school, I knew I wanted to pursue research. I was fascinated by how theoretical physicists could understand the Universe using only paper, a pencil, and some thinking. Initially, I aspired to become a physicist, but I grew disinterested because of the way the subject was taught. Despite my lack of enthusiasm, I continued attending college, but I decided to explore topics on my own. It was during this time that I realized my passion for mathematics, but I yearned to witness its real-world applications. Since my college experience didn’t provide the practical aspect I craved, I sought it online. There, I became captivated by how equations and ideas came to life through software.</p>
+
+<p>This is a brief account of my journey so far. It hasn’t been easy, and I’ve made mistakes along the way, but I cannot change the past. Currently, I am attending Georgia Gwinnett College, and I’m only a year and a half away from graduation. The upcoming semester is crucial because it will bring me close to conducting research, and so, I wanted to document all my experiences and learnings. That’s the primary purpose of this blog.</p>
+
+<h2 id="lets-put-it-to-test">Let’s put it to test</h2>
+
+<p>I am using Jekyll, and the thinkSpace theme for my blog. While learning on my own, I learned some web programming, and so I feel enough confidence to set up a simple static website using GitHub Pages. I also add latex support. The next part is just for testing:</p>
+
+<h4 id="this-is-some-latex">This is some latex:</h4>
+
+<p>The Lagrangian equation of motion is a fundamental equation in classical mechanics that describes the dynamics of a system based on its Lagrangian function.</p>
+
+<p>The Lagrangian function, denoted by L, is defined as the difference between the kinetic energy “T” and potential energy “V” of a system:</p>
+
+<p>L = T - V</p>
+
+<p>The Lagrangian equation of motion is derived from the principle of least action, which states that the true path taken by a system between two points in time
+is the one the minimizes the action integral along the path.</p>
+
+<p>The action integral “S” is defined as the integral of the Lagrangian function over time “t” from the initial time “t1” to the final time “t2”:</p>
+
+\[S = \int_{t_1}^{t_2} L\, dt\]
+
+<p>The Lagrangian equation of motion is expressed as follows:</p>
+
+\[\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q_i}} \right) - \frac{\partial L}{\partial q_i} = 0\]
+
+<p>In this equation, the term \(\frac{\partial L}{\partial \dot{q_i}}\) is called the generalized momentum, and \(\frac{\partial L}{\partial q_i}\) is called the generalized force.</p>
+
+<h4 id="an-now-some-code">An now some code:</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">print_chessboard</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="n">j</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="s">"X"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">" "</span><span class="p">)</span>  <span class="c1"># Print X for black squares
+</span>            <span class="k">else</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="s">"O"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">" "</span><span class="p">)</span>  <span class="c1"># Print O for white squares
+</span>        <span class="k">print</span><span class="p">()</span>  <span class="c1"># Move to the next line after each row
+</span>
+<span class="c1"># Test the function with size=8 for a standard 8x8 chessboard
+</span><span class="n">print_chessboard</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+</code></pre></div></div>
+:ET
