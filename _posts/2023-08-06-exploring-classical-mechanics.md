@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Exploring Classical Mechanics: A Journey of Self-Learning"
+title: "Exploring Classical Mechanics"
 comments: true
 description: "Classical Mechanics"
 keywords: "physics"

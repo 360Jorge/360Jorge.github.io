@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Exploring Functions in Mathematics: A Primer for Higher Mathematics"
+title: "Exploring Functions in Mathematics"
 comments: true
 description: "functions"
 keywords: "math"
