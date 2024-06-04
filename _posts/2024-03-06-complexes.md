@@ -41,10 +41,10 @@ Now, before I write the definiton of a simplicial complex, I will write the defi
 A face of a $k$-simplex is a sub-simplex. For instace, take a $2$-simplex (a triangle)
 
 {:refdef: style="text-align: center;"}
-![2-simplex](/assets/images/2-simplex.png)
+![2-simplex](/assets/images/simplicial-complex.png)
 {: refdef}
 
-In the image, we have 3 $0$-faces ($v_0, v_1, v_2$), 3 $1$-faces $e_0 = [v_0, v_1]$, $e_1 = [v_1, v_2]$, and $e_2 = [v_0, v_2]$, and 1 $2$-face $S_0 = [e_0, e_1, e_2]$.
+In the image of the triangle above, we have 3 $0$-faces ($v_0, v_1, v_2$), 3 $1$-faces $e_0 = [v_0, v_1]$, $e_1 = [v_1, v_2]$, and $e_2 = [v_0, v_2]$, and 1 $2$-face $S_0 = [e_0, e_1, e_2]$.
 
 I will now write the definiton of a simplicial compelex.
 
@@ -59,3 +59,7 @@ If $\sigma_1, \sigma_2$ are simplices in $\Sigma$, then $\sigma_1 \cap \sigma_2$
 ## Conclusion
 
 In conclusion, delving into the realm of algebraic topology and topological data analysis has been an enlightening journey. Through my exploration of concepts like simplicial complexes and persistent homology, I've gained a deeper understanding of the mathematical structures underlying complex data analysis. As I continue my research and writing, I look forward to sharing further insights and discoveries in this fascinating field.
+
+## References
+
+https://www.youtube.com/watch?v=8qXOdF1_nm8
