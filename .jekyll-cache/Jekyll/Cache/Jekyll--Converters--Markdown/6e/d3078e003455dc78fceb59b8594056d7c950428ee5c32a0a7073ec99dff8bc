@@ -1,0 +1,78 @@
+I"�<h2 id="introduction">Introduction</h2>
+
+<p>Have you ever wondered how something as simple as fitting pigeons into pigeonholes can lead to profound mathematical insights? The pigeonhole principle might seem straightforward at first glance, but its applications can be surprisingly deep and far-reaching. In this blog post, we’ll explore what the pigeonhole principle is, delve into some fascinating examples, and see how this principle helps solve complex problems in mathematics.</p>
+
+<h2 id="what-is-the-pigeonhole-principle">What is the Pigeonhole Principle?</h2>
+
+<p>The pigeonhole principle is a simple yet powerful concept in combinatorics. It states that if you have more pigeons than pigeonholes, at least one pigeonhole must contain more than one pigeon. Formally, if $n$ items are put into $m$ containers, with $n &gt; m$, then at least one container must hold more than one item.</p>
+
+<h2 id="simple-examples-to-illustrate-the-principle">Simple Examples to Illustrate the Principle</h2>
+
+<h4 id="socks-in-a-drawer">Socks in a Drawer</h4>
+
+<p>Imagine you have 10 pairs of socks, each pair a different color, mixed together in a drawer. If you pull out 11 individual socks, at least one pair of socks will match. This is because you have more socks (11) than the number of colors (10), guaranteeing a match.</p>
+
+<h4 id="birthdays-in-a-group">Birthdays in a Group</h4>
+
+<p>Consider a group of 13 people. According to the pigeonhole principle, at least two people will share a birth month. There are only 12 months in a year, so having 13 people ensures that one month must accommodate at least two birthdays.</p>
+
+<h2 id="a-more-complex-example">A more Complex Example</h2>
+
+<p>This is from the book “The Art and Craft of Problem Solving”. Solving most pigeonhole problems is often a three-part process:</p>
+
+<ol>
+  <li>Recognize that the problem might require the pigeonhole principle.</li>
+  <li>Figure out what the pigeons will be and what the holes must be.This is frequently the crux move.</li>
+  <li>After applying the pigeonhole principle, there is often more work to be done. Sometimes the pigeonhole principle yields only the “penultimate step”, and sometimes just an intermediate result. The skilled problem solver plans for this when thinking of a strategy.</li>
+</ol>
+
+<p>Now, let’s look at a more mathematical example to demonstrate the power of the pigeonhole principle.</p>
+
+<h4 id="problem">Problem</h4>
+
+<p>Show that among any $n + 1$ positive integers, there must be two whose difference is a multiple of $n$.</p>
+
+<h4 id="solution">Solution</h4>
+
+<ol>
+  <li>
+    <p>Consider the $n + 1$ positive integers: $a_1, a_2,…, a_{n+1}$</p>
+  </li>
+  <li>
+    <p>Compute the remainders of these integers when divided by $n$. Let the remainders be $r_1, r_2,…, r_{n+1}$.</p>
+  </li>
+  <li>
+    <p>Since there are $n + 1$ remainders and only $n$ possible values for these remainders (from $0$ to $n - 1$), by the pigeonhole principle, at least two of these integers must have the same remainder.</p>
+  </li>
+  <li>
+    <p>Let these integers be $a_i$ and $a_j$ with remainders $r$. Therefore, $a_i \equiv r \pmod {n}$ and $a_j \equiv r \pmod {n}$.</p>
+  </li>
+  <li>
+    <p>This means the difference $a_i - a_j$  is a multiple of $n$, i.e., $a_i - a_j = kn$ for some integer $k$.</p>
+  </li>
+</ol>
+
+<p>Thus, we have demonstrated that among any $n + 1$ positive integers, there are at least two whose difference is a multiple of $n$.</p>
+
+<h4 id="problem-1">Problem</h4>
+
+<p>(IMO 1972) Prove that from a set of ten distinct two-digit numbers (in the decimal system), it is possible to select two disjoint subsets whose members have the same sum.</p>
+
+<blockquote>
+  <p>Hint: For a set with $n$ elements, the number of possible subsets is $2^n.$ Thus, for a set of $10$ elements, there are $2^{10} = 1024$ subsets.</p>
+</blockquote>
+
+<h4 id="solution-1">Solution</h4>
+
+<p>We want to have two subsets have the same sum, so it is reasonable to make the subsets the pigeons, and the sums be the holes. We have to make sure that the number of subsets is bigger than the number of possible sums. We already know that the number of subsets is $2^{10} = 1024.$ Now, to calculate the number of possible sums, we need the smallest possible sum (which in this case is the smallest element) and the largest possible sum which is the sum of all elements in the set. The only $2$ digits numbers are:</p>
+
+\[10, 11, 12,..., 90, 91, 92, 93, 94, 95, 96, 97, 98, 99\]
+
+<p>We can see that the smallest element in this is $10.$ The maximum sum for any subset is the sum of all $10$ elements. Let’s assume the $10$ largest two-digit numbers to find an upper bound. Using the Gaussian pairing trick:</p>
+
+\[90, 91, 92, 93, 94, 95, 96, 97, 98, 99 = 189 \dot 5 = 945\]
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The pigeonhole principle is a fundamental tool in mathematics that, despite its simplicity, can lead to profound and elegant solutions. Whether you’re matching socks or solving complex mathematical problems, the principle shows that sometimes, the simplest ideas can be the most powerful.</p>
+:ET
