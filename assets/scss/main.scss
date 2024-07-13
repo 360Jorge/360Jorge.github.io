@@ -6,3 +6,70 @@
 
 @import "layout";
 @import "syntax-highlighting";
+
+// Add the styles for the posts page container
+.posts-container {
+  max-width: 800px; // Adjust the width as needed
+  margin: 0 auto;
+  padding: 20px; // Adjust the padding as needed
+}
+
+// Style the category headings
+.posts-container h2 {
+  margin-top: 40px;
+  font-size: 1.5em;
+  color: #333; // Adjust the color as needed
+}
+
+// Style the posts list
+.posts-container ul {
+  list-style: none;
+  padding: 0;
+
+  margin-left: 0.1em; // Adjust the left margin to align with category title
+}
+
+.posts-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3em; // Adjust the margin as needed
+}
+
+.posts-container a {
+  text-decoration: none;
+  color: #000000; // Adjust the link color as needed
+  transition: all 0.3s ease;
+
+  //flex-grow: 1; // Allow the link to take available space
+  //text-align: left; // Align text to the left
+}
+
+.posts-container a:hover {
+  color: #000000;
+  //text-decoration: underline;
+  //text-underline-offset: 8px; // Adjust the underline position
+}
+
+.posts-container a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px; // Adjust the height as needed
+  background: #0086B3;
+  transition: width 0.3s ease;
+}
+
+.posts-container a:hover::after {
+  width: 100%;
+}
+
+// Style the dates
+.posts-container .date {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: gray;
+
+  //margin-left: 10px; // Adjust the margin as needed
+  white-space: nowrap; // Prevent dates from wrapping
+}

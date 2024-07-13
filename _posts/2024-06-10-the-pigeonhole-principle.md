@@ -4,6 +4,7 @@ title: "The Pigeonhole Principle"
 comments: true
 description: "problem solving"
 keywords: "problem-solving"
+categories: [mathematics, Putnam]
 ---
 
 ## Introduction
@@ -80,7 +81,49 @@ Why the sums are still the same after removing the common element of the sets $A
 
 Let $C = A \cap B$ be the set of common elements between $A$ and $B$. Then, the sum of elements in $C$ is $\Sigma(C).$ Notice that $\Sigma(A \setminus C) = \Sigma(A) - \Sigma(C)$, and $\Sigma(B \setminus C) = \Sigma(B) - \Sigma(C)$. Since $\Sigma(A) = \Sigma(B),$ $\Sigma(A \setminus C) = \Sigma(B \setminus C).$ 
 
+## Solved Problems
 
+(Putnam 1978)Let $A$ be any set of $20$ distinct integers chosen from the arithmetic progression $1, 4, 7, . . . , 100.$ Prove that there must be two distinct integers in $A$ whose sum is $104.$
+
+#### Solution
+
+Consider the pair of integers from the sequence that sum to $104.$ Thus, we have,
+
+$$(100,4)$$
+
+$$(97, 7)$$
+
+$$(94,10)$$
+
+$$(91,13)$$
+
+$$(88,16)$$
+
+$$(85,19)$$
+
+$$(82,22)$$
+
+$$(79,25)$$
+
+$$(76,28)$$
+
+$$(73,31)$$
+
+$$(70,34)$$
+
+$$(67,37)$$
+
+$$(64,40)$$
+
+$$(61,43)$$
+
+$$(58,46)$$
+
+$$(55,49)$$
+
+$$(52,52)$$
+
+Notice there are $17$ pairs. When we select $20$ distinct integers from the $34$ integers, it is impossible to avoid picking both numbers from at least one of these pairs.$\ \quad \blacksquare\$
 
 ## Conclusion
 

@@ -1,0 +1,165 @@
+I"�(<h2 id="introduction">Introduction</h2>
+
+<p>Problem-solving is a vital skill in mathematics and beyond, touching every field where critical thinking and innovation are necessary. Paul Zeitz’s “The Art and Craft of Problem Solving” offers a rich compendium of strategies and insights that are as practical as they are enlightening. This book delves into the mindset and methodologies that can turn a perplexing problem into a solvable challenge. Here, we explore key strategies from Zeitz’s work, providing a roadmap for anyone looking to sharpen their problem-solving abilities.</p>
+
+<h2 id="strategies-for-getting-started">Strategies for Getting started</h2>
+
+<p>As I said before, most Putnam problems, you won’t even know how to start working on them. Thus, having strategies to just do that is very important.</p>
+
+<h4 id="orientation-starting-off-right">Orientation: Starting Off Right</h4>
+
+<ol>
+  <li>
+    <p>A crucial aspect of problem-solving that Zeitz highlights is the orientation phase. Here are some essential steps to take at the beginning of every problem:</p>
+  </li>
+  <li>
+    <p>Read the problem carefully. Pay attention to details such as positive vs. negative, finite vs. infinite, and so on. The nuances in the problem statement can significantly impact your approach.</p>
+  </li>
+  <li>
+    <p>Begin to classify the problem. Is it a “to find” or “to prove” problem? Is the problem similar to others you have encountered before? Classifying the problem can guide your initial steps and help in choosing the right strategy.</p>
+  </li>
+  <li>
+    <p>Identify the hypothesis and conclusion. Clearly distinguish between what is given (the hypothesis) and what needs to be shown or found (the conclusion).</p>
+  </li>
+  <li>
+    <p>Preliminary brainstorming. Start with some quick, preliminary brainstorming to set the stage for deeper analysis:</p>
+  </li>
+</ol>
+
+<blockquote>
+  <ol>
+    <li>Think about convenient notation that can simplify your work.</li>
+    <li>Consider if a particular method of argument might be plausible.</li>
+    <li>Try to guess a possible solution, trusting your intuition.</li>
+    <li>Look for key words or concepts that might be important, such as prime numbers, perfect squares, or infinite sequences.</li>
+  </ol>
+</blockquote>
+
+<p>Once you’ve completed these steps, take a moment to review and repeat them. Rereading the problem and rethinking your initial classification, hypothesis, and conclusion can often lead to new insights and a clearer understanding.</p>
+
+<h4 id="get-your-hands-dirty">Get your hands dirty</h4>
+
+<p>Zeitz encourages a hands-on approach to problem-solving. Stay loose and experiment—plug in numbers, test out different scenarios, and look for patterns. This playful, exploratory phase is not only fun but also essential. Many high-level mathematical discoveries start with simple “plug and chug” methods. By staying flexible and open to experimentation, you can uncover unexpected insights and build a deeper understanding of the problem at hand.</p>
+
+<h4 id="penultimate-step">Penultimate step</h4>
+
+<p>Once you know what the desired conclusion is, think about what might yield that conclusion in a single step. Sometimes, identifying this penultimate step can make the final solution more obvious. For instance, if you need to prove that two complex expressions are equal, consider showing separately that each is less than or equal to the other. Or, if you need to prove that one expression is always even and another is always odd, focus on these properties as a penultimate step. Even if the search for a penultimate step doesn’t yield an immediate solution, it can help you refine your overall proof strategy.</p>
+
+<h4 id="wishful-thinking-and-make-it-easier">Wishful thinking and Make it easier</h4>
+
+<p>Combining psychology and mathematics, these strategies help break initial impasses. Ask yourself, “What is it about the problem that makes it hard?” Then, temporarily remove that difficulty. Simplify big, ugly numbers, or remove complicated algebraic terms. This wishful thinking can lead to bold solutions or at least highlight the core difficulty, making it easier to address. By making the problem more approachable, you can boost your confidence and have more fun with the process.</p>
+
+<h2 id="methods-of-argument">Methods of argument</h2>
+
+<h4 id="argument-by-contradiction">Argument by contradiction</h4>
+
+<h6 id="example">Example</h6>
+
+<p>Prove that if $p$ is prime, then modulo $p$, every non-zero number has a unique multiplicative inverse; i.e., if $x$ is not a multiple of $p$, then there is a unique $y \in \{1,2,3,…,p-1\}$ such that $xy \equiv 1 (\mod p).$ For example, if $p = 7$, the multiplicative inverses $(\mod 7)$ of $1,2,3,4,5,6$ are $1,4,5,2,3,6$ respectively.</p>
+
+<h6 id="proof">Proof</h6>
+
+<p>Also mention direct proofs!!!</p>
+
+<h4 id="mathematical-induction">Mathematical induction</h4>
+
+<h5 id="standard-induction">Standard Induction</h5>
+
+<p>Let $S$ be a subset of the set of natural numbers $\mathbb{N}.$ If</p>
+
+<ol>
+  <li>
+    <p>$S$ contains $1$ and</p>
+  </li>
+  <li>
+    <p>$S$ contains the positive intenger  $n + 1$ whenever $S$ contains $n,$</p>
+  </li>
+</ol>
+
+<p>then $S = \mathbb{N}.$</p>
+
+<p>In essence, the Principle of Mathematical Induction tells us that if we have a set $S \subseteq \mathbb{N}$ containing $1$ and if $S$ contains the integer $n + 1$ whenever $S$ contains $n,$ then $S$ must contain $1 + 1 = 2.$ But then $S$ must also contain $2 + 1 = 3,$ and $3 + 1 = 4,$ and so on. Therefore, $S$ will contain all natural numbers.</p>
+
+<h6 id="example-1">Example</h6>
+
+<p>Apply the Principle of Mathematical Induction to establish equation $1 + 2 + 2^2 + 2^3 + … + 2^{n-1} = 2^n - 1.$</p>
+
+<h6 id="solution">Solution</h6>
+
+<p>Let $S = \{ n \in \mathbb{N} : 1 + 2 + 2^2 + 2^3 + … + 2^{n-1} = 2^n - 1 \}.$ To use the Principle of Mathematical Induction, we need to show that $1 \in S$ and that $n+1 \in S$ whenever $n \in S.$ First, we will show that $1 \in S$(the base case.) Notice that when $n = 1,$ we have</p>
+
+\[1 + 2 + 2^2 + 2^3 + ... + 2^{n-1} = 2^0 = 1\]
+
+<p>and</p>
+
+\[2^n - 1 = 2^1 - 1 = 2 - 1 = 1.\]
+
+<p>So the equation is true when $n = 1,$ which means that $1 \in S.$ For the inductive step, we need to show that $n+1 \in S$ whenever $n \in S.$ To do so, we will assume that $n \in S$ for some integer $n &gt; 1$(the inductive hypothesis.) In this case, we will assume that</p>
+
+\[\begin{align}
+1 + 2 + 2^2 + 2^3 + ... + 2^{n-1} = 2^n - 1.
+\end{align}\]
+
+<p>We then need to prove that $n+1 \in S.$ So we need to show that</p>
+
+\[1 + 2 + 2^2 + 2^3 + ... + 2^{n-1} + 2^{(n+1) - 1} = 2^{n+1} - 1\]
+
+<p>or, equivalently,</p>
+
+\[\begin{align}
+1 + 2 + 2^2 + 2^3 + ... + 2^{n-1} + 2^{n} = 2^{n+1} - 1.
+\end{align}\]
+
+<p>To prove ($2$), we can substitute from ($1$) in the left hand side of ($2$) to obtain</p>
+
+\[1 + 2 + 2^2 + 2^3 + ... + 2^{n-1} + 2^{n} = (1 + 2 + 2^2 + 2^3 + ... + 2^{n-1}) + 2^{n}\]
+
+\[= (2^n - 1) + 2^n\]
+
+\[= 2(2^n) - 1\]
+
+\[= 2^{n+1} - 1\]
+
+<p>which shows that $n+1 \in S.$ Therefore, $S = \mathbb{N}$ by the Principle of Mathematical Induction.</p>
+
+<h5 id="strong-induction">Strong Induction</h5>
+
+<h4 id="draw-a-picture">Draw a picture</h4>
+
+<p>This is a technique I cant tell much about since I have been paying more attetion to number theory, algebra and analysis problems, but I will share what I read anyways!though topology requires some drawing to get a better view!</p>
+
+<h4 id="recast-the-problem-in-other-ways">Recast the problem in other ways</h4>
+
+<h4 id="change-your-point-of-view">Change your point of view</h4>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Paul Zeitz’s “The Art and Craft of Problem Solving” is a treasure trove of strategies and insights that equip individuals to tackle challenging problems with confidence and creativity. By understanding the problem, developing a strategic plan, executing it methodically, and reflecting on the process, problem solvers can enhance their skills and achieve more consistent success. Embracing additional strategies like pattern discovery, considering extreme cases, and leveraging symmetry further enriches one’s problem-solving toolkit. Ultimately, the art and craft of problem solving lie in a blend of analytical rigor, creative thinking, and persistent practice.</p>
+
+<h4 id="see-to-use">See to use</h4>
+
+<p>I’ve always like sports! I was born in Peru, and in the 90s and 20s, my generation used to play soccer all day. And in south America, I think that is pretty normal. Then when I turned 14 I started skateboarding which I did until I was 21. Then I fell in love with mathematics! I never imagined there was something like sports competititon for mathematics until I found out about the Putnam competition. I took it last year, and those are really tough problems. Most of the time you do not even know where to start! As any sports, I enjoy looking for ways to get better at it. It is easy to get discouraged because those problems are really really hard! Makes you feel like you didnt learn anything before!…This is something to really keep in mind if you want to get better at problem solving( or at least somehting that is helping me.)</p>
+
+<p>or this</p>
+
+<blockquote>
+  <p>If the given problem is too hard, solve an easier one.</p>
+</blockquote>
+
+<blockquote>
+  <p>But most beginners give up too soon, because they lack the  <code class="highlighter-rouge">mental toughness</code>
+attributes of  <code class="highlighter-rouge">confidence</code>  and  <code class="highlighter-rouge">concentration.</code>  It is hard to work on a problem if you
+don’t believe that you can solve it, and it is impossible to keep working past your
+“frustration threshold.”</p>
+</blockquote>
+
+<p>I am in the process, so take this as a way to get better at problem solving, and to be honest, the only way to get better is by working and practicing tons of problems! Actually, I am writing this also as a way to get better at it! and share what I have learned so far!</p>
+
+<blockquote>
+  <p>The solution to every problem involves two parts: the <code class="highlighter-rouge">investigation</code>, during which you discover what is going on, and the <code class="highlighter-rouge">argument</code>, in which you convince others of your discoveries.</p>
+</blockquote>
+
+<blockquote>
+  <p>Anything that stimulates investigation is good.</p>
+</blockquote>
+:ET

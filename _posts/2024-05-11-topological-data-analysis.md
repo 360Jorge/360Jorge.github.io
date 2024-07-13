@@ -4,6 +4,7 @@ title: "Topological Data Analysis"
 comments: true
 description: "topological data analysis"
 keywords: "topology, data analysis"
+categories: [Topological Data Analysis, topology]
 ---
 
 ## Introduction
