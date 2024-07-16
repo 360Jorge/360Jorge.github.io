@@ -1,6 +1,6 @@
-I"$1<h2 id="introduction">Introduction</h2>
+I" 2<h2 id="introduction">Introduction</h2>
 
-<p>Hello, fellow math enthusiasts! My name is Jorge, and last semester, I had the unique opportunity to dive deep into the world of topology through an inquiry-based learning approach in my point set topology class. This method was a game-changer for me, as it emphasized exploration and discovery, allowing us to develop our own understanding of complex concepts through guided problem-solving and collaboration.</p>
+<p>Hello, fellow math enthusiasts! My name is Jorge, and last semester, I had the unique opportunity to dive into the world of topology through an inquiry-based learning approach in my introduction to topology class. This method was a game-changer for me, as it emphasized exploration and discovery, allowing us to develop our own understanding of complex concepts through guided problem-solving and collaboration.</p>
 
 <p>Throughout the semester, we tackled a variety of fundamental topics in topology, such as topological spaces, bijective functions, compactness, Hausdorff spaces, and homeomorphisms. Our ultimate goal was to prove a fascinating and elegant result: the homeomorphism between the Cantor Set and the discrete product topology on a countably infinite set.</p>
 
@@ -131,23 +131,21 @@
   </li>
 </ol>
 
-<h2 id="scratch-work">Scratch Work</h2>
-
-<p>Behind every proof there is a lot of work, and some of them took years to be solved!</p>
-
-<p style="text-align: center;"><img src="/assets/images/topology.jpg" alt="topology" /></p>
-
 <p>We will use the next theorem to prove the homeomorphism between the Cantor Set and the discrete product topology:</p>
 
 <h5 id="theorem">Theorem:</h5>
 
 <p>A continuous bijection from a compact space onto a Hausdorff space is a homeomorphism.</p>
 
+<h5 id="proof">Proof</h5>
+
+<p>Let $X$ be a compact space and let $Y$ be a Hausdorff space.  Let $f:X\rightarrow Y$ be a continuous bijection of $X$ onto $Y.$  We need only show that $f^{-1}:Y\rightarrow X$ is continuous. Let $C\subseteq X$ be closed.  Since $X$ is compact, and since closed subsets of compact spaces are compact, it follows that $C$ is compact.  Since the continuous image of a compact set is compact, we must have $f(C)$ is compact in $Y.$  Since a compact subset of a Hausdorff space is closed, we see that $f(C)$ is closed.  Hence $(f^{-1})^{-1}(C)=f(C)$ is closed, and thus $f^{-1}$ is continuous.</p>
+
 <h3 id="theorem-1">Theorem:</h3>
 
 <p>For each $n \in \mathbb{N},$ let $X_n=\{0,2\},$ and endow $X_n$ with the discrete topology. Put $X = \prod_{n \in \mathbb{N}} X_n,$ and endow $X$ with the product topology $T.$  Endow the Cantor set, $\mathcal{C},$ with the topology $S$ it inherits as a subspace of $[0,1].$  Then $(\mathcal{C},S) \simeq (X,T).$</p>
 
-<h1 id="proof">Proof</h1>
+<h1 id="proof-1">Proof</h1>
 
 <p>Observe that if $x=0.x_1x_2x_3\ldots\in \mathcal{C},$ then this number has a unique ternary expansion such that $x_k\in {0,2}$ for all $k\in \mathbb{N}.$  Henceforth we will assume this ternary expansion for all $x\in \mathcal{C}$.</p>
 
@@ -171,6 +169,8 @@
 
 <p>There are several ways to prove a theorem!</p>
 
+<p>Behind every proof there is a lot of work, and some of them took years to be solved!</p>
+
 <h2 id="appendix">Appendix</h2>
 
 <ol>
@@ -178,7 +178,7 @@
     <p>Detailed Proofs: Include detailed proofs of the theorems and lemmas used in the proof of the homeomorphism for readers who want a deeper understanding.</p>
   </li>
   <li>
-    <p>Heine-Borel Theorem: Equip $\mathbb{R}$ with the standard topology. A subset $K$ of $\mathbb{R}$ is compact if and only if $K$ is closed and bounded. - <a href="https://www.notion.so/Heine-Borel-Theorem-3017114db74d4c069475672a289e4e6a?pvs=4">click here for proof!</a></p>
+    <p>Heine-Borel Theorem: Equip $\mathbb{R}$ with the standard topology. A subset $K$ of $\mathbb{R}$ is compact if and only if $K$ is closed and bounded.</p>
   </li>
   <li>
     <p>Theorem: Let $\Lambda$ be an indexing set, and for each $\alpha \in \Lambda$, let $(X_\alpha, \mathcal{T}_\alpha)$  be a topological space. Let $(X, \mathcal{T})$ be the product space, and let $(Y, \mathcal{S})$ be another topological space.</p>
@@ -198,11 +198,6 @@
 <h2 id="references">References</h2>
 
 <ol>
-  <li>
-    <p>https://github.com/360Jorge/Topology_Book/blob/main/Topology_Book.pdf</p>
-  </li>
-  <li>
-    <p>https://www.notion.so/Heine-Borel-Theorem-3017114db74d4c069475672a289e4e6a?pvs=4</p>
-  </li>
+  <li>https://github.com/360Jorge/Topology_Book/blob/main/Topology_Book.pdf</li>
 </ol>
 :ET
