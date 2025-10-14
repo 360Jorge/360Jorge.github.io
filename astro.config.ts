@@ -20,6 +20,7 @@ import path from 'path'
 export default defineConfig({
   site: 'https://360jorge.github.io', // ← your Pages URL
   base: '/',                           // user/organization site => root
+  output: 'static',            // ← force static build
 
   image: {
     service: {
