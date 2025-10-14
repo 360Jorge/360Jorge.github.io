@@ -11,43 +11,38 @@ import rehypeCleanup from './src/plugins/rehype-cleanup.mjs'
 import rehypeImageProcessor from './src/plugins/rehype-image-processor.mjs'
 import rehypeCopyCode from './src/plugins/rehype-copy-code.mjs'
 import remarkTOC from './src/plugins/remark-toc.mjs'
-import { themeConfig } from './src/config'
+// import { themeConfig } from './src/config'
 import { imageConfig } from './src/utils/image-config'
 import path from 'path'
-import netlify from '@astrojs/netlify'
+// import netlify from '@astrojs/netlify'
 
+// NOTE: No hosting adapter for GitHub Pages (static build)
 export default defineConfig({
-  adapter: netlify(), // Set adapter for deployment, or set `linkCard` to `false` in `src/config.ts`
-  site: themeConfig.site.website,
+  site: 'https://360jorge.github.io', // ← your Pages URL
+  base: '/',                           // user/organization site => root
+
   image: {
     service: {
       entrypoint: 'astro/assets/services/sharp',
       config: imageConfig
     }
   },
+
   markdown: {
-    shikiConfig: {
-      theme: 'css-variables',
-      wrap: false
-    },
+    shikiConfig: { theme: 'css-variables', wrap: false },
     remarkPlugins: [remarkMath, remarkDirective, remarkEmbeddedMedia, remarkReadingTime, remarkTOC],
     rehypePlugins: [rehypeKatex, rehypeCleanup, rehypeImageProcessor, rehypeCopyCode]
   },
+
   integrations: [
-    playformInline({
-      Exclude: [(file) => file.toLowerCase().includes('katex')]
-    }),
+    playformInline({ Exclude: [(file) => file.toLowerCase().includes('katex')] }),
     mdx(),
     sitemap()
   ],
+
   vite: {
-    resolve: {
-      alias: {
-        '@': path.resolve('./src')
-      }
-    }
+    resolve: { alias: { '@': path.resolve('./src') } }
   },
-  devToolbar: {
-    enabled: false
-  }
+
+  devToolbar: { enabled: false }
 })
