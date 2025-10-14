@@ -7,10 +7,8 @@ This content will be displayed at the top of the index page.
 You can leave this empty if you don’t want to show any content.
 -->
 
-A static blog theme based on [Astro](https://astro.build), designed for clarity and focus.
 
-With a deliberately minimal design, this layout ensures your content takes center stage. It's built for flexibility, offering customization options that honor its clean and elegant aesthetic.
+Learn math through reasoning, not memorization.
+This site blends daily problem-solving, reflections on proofs, and teaching resources for _students who want to think like mathematicians._
 
-Effortlessly share your thoughts in _a calm & dustless space._
-
-Check posts for details and view source on [GitHub](https://github.com/the3ash/astro-chiri).
+Whether you’re preparing for the GRE, exploring the Putnam, or just love math challenges — you’ll find strategies, examples, and guidance here.
